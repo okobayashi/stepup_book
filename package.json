@@ -1,0 +1,19 @@
+{
+  "name": "stepup_book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okobayashi/stepup_book.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okobayashi/stepup_book/issues"
+  },
+  "homepage": "https://github.com/okobayashi/stepup_book#readme"
+}
