@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/okobayashi/stepup_book/issues"
   },
-  "homepage": "https://github.com/okobayashi/stepup_book#readme"
+  "homepage": "https://github.com/okobayashi/stepup_book#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
