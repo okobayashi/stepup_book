@@ -1,17 +1,17 @@
 a	{
-	color: #017acd
+	color: #017acd;
 }
 /* コンテナ */
 div#container	{
 	width: 760px;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 }
 /* ヘッダー */
 div#header	{
 	background-color: #017acd;
 	background-image: url(sky.jpg);
-	padding: 28px 20px 98px
+	padding: 28px 20px 98px;
 }
 div#header h1	{
 	margin: 0
@@ -19,7 +19,7 @@ div#header h1	{
 div#header p	{
 	color: #ffffff;
 	font-size: 0.75em;
-	margin: 0
+	margin: 0;
 }
 /* メニュー */
 ul#menu	{
@@ -29,10 +29,11 @@ ul#menu	{
 	margin-left: 0;
 	padding-left: 0;
 	height: 30px;
-	background-color: #005087
+	background-color: #005087;
 }
-ul#menu li	{list-style-type: none;
-	float: left
+ul#menu li	{
+	list-style-type: none;
+	float: left;
 }
 ul#menu li a	{
 	display: block;
@@ -42,14 +43,14 @@ ul#menu li a	{
 	text-align: center;
 	color: #ffffff;
 	background-color: #005087;
-	border-right: solid 1px #ffffff
+	border-right: solid 1px #ffffff;
 }
-ul#menu li a:hover	{background-color: #017acd
+ul#menu li a:hover	{background-color: #017acd;
 }
 /* コンテンツ */
 div#content	{width: 564px;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 }
 div#content h2	{
 	background-color: #014471;
@@ -59,7 +60,7 @@ div#content h2	{
 	color: #ffffff;
 	line-height: 45px;
 	padding-left: 12px;
-	margin-bottom: 0
+	margin-bottom: 0;
 }
 div#content h3	{
 	background-color: #ffffff;
@@ -72,14 +73,14 @@ div#content h3	{
 	margin-top: 30px;
 	margin-bottom: 0;
 	margin-left: 12px;
-	margin-right: 12px
+	margin-right: 12px;
 }
 div#content p	{
 	font-size: 0.75em;
 	line-height: 1.6;
 	margin-top: 10px;
 	margin-left: 12px;
-	margin-right: 12px
+	margin-right: 12px;
 }
 /* フッター */
 div#footer	{
@@ -87,21 +88,22 @@ div#footer	{
 	background-color: #005087;
 	margin-top: 25px;
 	padding-top: 8px;
-	padding-bottom: 8px
+	padding-bottom: 8px;
 }
-address	{
+small	{
 	font-size: 0.75em;
 	font-style: normal;
-	text-align: center
+	text-align: center;
+	display: block;
 }
 /* 画像の配置 */
 img.photo-odd	{
 	float: right;
 	margin-left: 15px;
-	margin-bottom: 15px
+	margin-bottom: 15px;
 }
 img.photo-even	{
 	float: left;
 	margin-right: 15px;
-	margin-bottom: 15px
+	margin-bottom: 15px;
 }
