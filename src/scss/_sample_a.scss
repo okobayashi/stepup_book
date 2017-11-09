@@ -47,21 +47,43 @@ a	{
 	background-color: #017acd;
 }
 /* コンテンツ */
-.content	{
+.content {
 	width: 564px;
 	margin-left: auto;
 	margin-right: auto;
+	&__head {
+		margin-bottom: 20px;
+	}
+	&__title {
+		background-color: #014471;
+		background-image: url(../images/bar-darkblue.png);
+		background-repeat: no-repeat;
+		font-size: 1em;
+		color: #ffffff;
+		line-height: 45px;
+		padding-left: 12px;
+		margin-bottom: 0;
+	}
+	&__summary {
+		padding-top: 20px;
+	}
 }
-div#content h2	{
-	background-color: #014471;
-	background-image: url(../images/bar-darkblue.png);
-	background-repeat: no-repeat;
-	font-size: 1em;
-	color: #ffffff;
-	line-height: 45px;
-	padding-left: 12px;
-	margin-bottom: 0;
+.section {
+	&__title {
+		background-color: #ffffff;
+		background-image: url(../images/maru-skyblue.png);
+		background-repeat: no-repeat;
+		background-position: 0px 2px;
+		font-size: 0.875em;
+		line-height: 22px;
+		padding-left: 26px;
+		margin-top: 30px;
+		margin-bottom: 0;
+		margin-left: 12px;
+		margin-right: 12px;
+		}
 }
+
 div#content h3	{
 	background-color: #ffffff;
 	background-image: url(../images/maru-skyblue.png);
