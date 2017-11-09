@@ -8,19 +8,14 @@ div#container	{
 	margin-right: auto;
 }
 /* ヘッダー */
-header	{
+.header	{
 	background-color: #017acd;
-	background-image: url(sky.jpg);
+	background-image: url(../images/sky.jpg);
 	padding-top: 28px;
-}
-header h1	{
-	margin-left: 20px;
-}
-header p	{
-	color: #ffffff;
-	font-size: 0.75em;
-	margin-bottom: 98px;
-	margin-left: 20px;
+	&__text {
+		color: #FFF;
+		font-size: 0.75em;
+	}
 }
 /* メニュー */
 ul	{
@@ -55,7 +50,7 @@ div#content	{width: 564px;
 }
 div#content h2	{
 	background-color: #014471;
-	background-image: url(bar-darkblue.png);
+	background-image: url(../images/bar-darkblue.png);
 	background-repeat: no-repeat;
 	font-size: 1em;
 	color: #ffffff;
@@ -65,7 +60,7 @@ div#content h2	{
 }
 div#content h3	{
 	background-color: #ffffff;
-	background-image: url(maru-skyblue.png);
+	background-image: url(../images/maru-skyblue.png);
 	background-repeat: no-repeat;
 	background-position: 0px 2px;
 	font-size: 0.875em;
