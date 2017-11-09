@@ -2,7 +2,7 @@ a	{
 	color: #017acd;
 }
 /* コンテナ */
-div#container	{
+.container	{
 	width: 760px;
 	margin-left: auto;
 	margin-right: auto;
@@ -11,29 +11,31 @@ div#container	{
 .header	{
 	background-color: #017acd;
 	background-image: url(../images/sky.jpg);
-	padding-top: 28px;
+	margin-bottom: 50px;
+	&__body {
+		padding: 28px 20px 98px;
+	}
 	&__text {
 		color: #FFF;
 		font-size: 0.75em;
 	}
 }
 /* メニュー */
-ul	{
+.nav	{
 	font-size: 0.75em;
 	margin-top: 0;
-	margin-bottom: 30px;
 	margin-left: 0;
 	padding-left: 0;
-	height: 30px;
 	background-color: #005087;
+	&__item {
+		display: block;
+		width: 20%;
+		list-style-type: none;
+	    float: left;
+	}
 }
-ul li	{
-	list-style-type: none;
-	float: left;
-}
-ul li a	{
+.nav a	{
 	display: block;
-	width: 120px;
 	line-height: 30px;
 	text-decoration: none;
 	text-align: center;
@@ -41,10 +43,12 @@ ul li a	{
 	background-color: #005087;
 	border-right: solid 1px #ffffff;
 }
-ul#menu li a:hover	{background-color: #017acd;
+.nav li a:hover	{
+	background-color: #017acd;
 }
 /* コンテンツ */
-div#content	{width: 564px;
+.content	{
+	width: 564px;
 	margin-left: auto;
 	margin-right: auto;
 }
