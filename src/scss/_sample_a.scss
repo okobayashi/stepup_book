@@ -32,19 +32,19 @@ a	{
 		width: 20%;
 		list-style-type: none;
 	    float: left;
+	    a {
+	    	display: block;
+			line-height: 30px;
+			text-decoration: none;
+			text-align: center;
+			color: #ffffff;
+			background-color: #005087;
+			border-right: solid 1px #ffffff;
+	    }
+	    a:hover {
+	    	background-color: #017acd;
+	    }
 	}
-}
-.nav a	{
-	display: block;
-	line-height: 30px;
-	text-decoration: none;
-	text-align: center;
-	color: #ffffff;
-	background-color: #005087;
-	border-right: solid 1px #ffffff;
-}
-.nav li a:hover	{
-	background-color: #017acd;
 }
 /* コンテンツ */
 .content {
