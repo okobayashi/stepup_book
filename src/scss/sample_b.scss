@@ -1,0 +1,120 @@
+a	{
+	color: #017acd;
+}
+/* コンテナ */
+div#container	{
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* ヘッダー */
+header	{
+	background-color: #017acd;
+	background-image: url(../images/sky.jpg);
+	padding: 28px 20px 150px;
+}
+header h1	{
+	margin: 0
+}
+header p	{
+	color: #ffffff;
+	font-size: 0.75em;
+	margin: 0;
+}
+/* パンくずリスト */
+nav#bread	{
+	font-size: 0.75em;
+	margin-top: 3px;
+	margin-bottom: 30px
+}
+/* コンテンツ */
+article	{
+	width: 564px;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+article h2	{
+	background-color: #014471;
+	background-image: url(../images/bar-blue.png);
+	background-repeat: no-repeat;
+	font-size: 0.875em;
+	color: #ffffff;
+	line-height: 28px;
+	padding-left: 6px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+article h3	{
+	background-color: #e0e0e0;
+	background-image: url(../images/bar-green.png);
+	background-repeat: no-repeat;
+	font-size: 0.875em;
+	line-height: 23px;
+	padding-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+article p	{
+	font-size: 0.75em;
+	line-height: 1.6;
+	margin-top: 10px;
+}
+/* サイドバー */
+div#sidebar	{
+	width: 166px;
+	float: left;
+	margin-bottom: 25px;
+}
+div#sidebar nav ul	{
+	font-size: 0.75em;
+	margin-top: 0;
+	margin-left: 0;
+	padding-left: 0;
+	line-height: 0;
+}
+div#sidebar nav ul li	{
+	list-style-type: none;
+}
+div#sidebar nav ul li a	{display: block;
+	line-height: 30px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #005087;
+	border-bottom: solid 1px #ffffff;
+	padding-left: 10px;
+}
+div#sidebar nav ul li a:hover	{
+	background-color: #017acd;
+}
+div#sidebar aside	{
+	margin-bottom: 10px;
+}
+div#sidebar aside a	{
+	font-size: 0.75em;
+	color: #444444;
+	text-decoration: none;
+	line-height: 30px;
+	border: solid 1px #888888;
+	padding: 5px;
+}
+div#sidebar aside img	{
+	border: none;
+	vertical-align: middle;
+}
+/* フッター */
+footer	{
+	background-image: url(../images/line-blue.png);
+	background-repeat: repeat-x;
+	width: 760px;
+	margin-top: 0;
+	padding-top: 8px;
+	clear: both;
+}
+small	{
+	font-size: 0.75em;
+	font-style: normal;
+	text-align: center;
+	display: block;
+}
