@@ -21,28 +21,30 @@ a	{
 	}
 }
 /* メニュー */
-.nav	{
+.nav {
 	font-size: 0.75em;
 	margin-top: 0;
 	margin-left: 0;
 	padding-left: 0;
 	background-color: #005087;
 	&__item {
-		display: block;
+		display: inline-block;
 		width: 20%;
-		list-style-type: none;
 	    float: left;
 	    a {
+	    	border-right: solid 1px #ffffff;
 	    	display: block;
 			line-height: 30px;
 			text-decoration: none;
 			text-align: center;
 			color: #ffffff;
 			background-color: #005087;
-			border-right: solid 1px #ffffff;
-	    }
-	    a:hover {
-	    	background-color: #017acd;
+		}
+		&:hover {
+			background-color: #017acd;
+		}
+		&:last-child a {
+	    		border-right: none;
 	    }
 	}
 }
