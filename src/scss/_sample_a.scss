@@ -1,94 +1,83 @@
 a	{
 	color: #017acd;
 }
+
 /* コンテナ */
-.container	{
+div#container	{
 	width: 760px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 /* ヘッダー */
-.header	{
+div#header	{
 	background-color: #017acd;
-	background-image: url(../images/sky.jpg);
-	margin-bottom: 50px;
-	&__body {
-		padding: 28px 20px 98px;
-	}
-	&__text {
-		color: #FFF;
-		font-size: 0.75em;
-	}
+	background-image: url(sky.jpg);
+	padding: 28px 20px 98px;
 }
+
+div#header h1	{
+	margin: 0;
+}
+
+div#header p	{
+	color: #ffffff;
+	font-size: 0.75em;
+	margin: 0;
+}
+
 /* メニュー */
-.nav {
+ul#menu	{
 	font-size: 0.75em;
 	margin-top: 0;
+	margin-bottom: 30px;
 	margin-left: 0;
 	padding-left: 0;
+	height: 30px;
 	background-color: #005087;
-	&__item {
-		display: inline-block;
-		width: 20%;
-	    float: left;
-	    a {
-	    	border-right: solid 1px #ffffff;
-	    	display: block;
-			line-height: 30px;
-			text-decoration: none;
-			text-align: center;
-			color: #ffffff;
-			background-color: #005087;
-		}
-		&:hover {
-			background-color: #017acd;
-		}
-		&:last-child a {
-	    		border-right: none;
-	    }
-	}
 }
+
+ul#menu li	{
+	list-style-type: none;
+	float: left;
+}
+
+ul#menu li a	{
+	display: block;
+	width: 120px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	background-color: #005087;
+	border-right: solid 1px #ffffff;
+}
+
+ul#menu li a:hover	{
+	background-color: #017acd;
+}
+
 /* コンテンツ */
-.content {
+div#content	{
 	width: 564px;
 	margin-left: auto;
 	margin-right: auto;
-	&__head {
-		margin-bottom: 20px;
-	}
-	&__title {
-		background-color: #014471;
-		background-image: url(../images/bar-darkblue.png);
-		background-repeat: no-repeat;
-		font-size: 1em;
-		color: #ffffff;
-		line-height: 45px;
-		padding-left: 12px;
-		margin-bottom: 0;
-	}
-	&__summary {
-		padding-top: 20px;
-	}
 }
-.section {
-	&__title {
-		background-color: #ffffff;
-		background-image: url(../images/maru-skyblue.png);
-		background-repeat: no-repeat;
-		background-position: 0px 2px;
-		font-size: 0.875em;
-		line-height: 22px;
-		padding-left: 26px;
-		margin-top: 30px;
-		margin-bottom: 0;
-		margin-left: 12px;
-		margin-right: 12px;
-		}
+
+div#content h2	{
+	background-color: #014471;
+	background-image: url(bar-darkblue.png);
+	background-repeat: no-repeat;
+	font-size: 1em;
+	color: #ffffff;
+	line-height: 45px;
+	padding-left: 12px;
+	margin-bottom: 0;
 }
 
 div#content h3	{
 	background-color: #ffffff;
-	background-image: url(../images/maru-skyblue.png);
+	background-image: url(maru-skyblue.png);
 	background-repeat: no-repeat;
 	background-position: 0px 2px;
 	font-size: 0.875em;
@@ -99,6 +88,7 @@ div#content h3	{
 	margin-left: 12px;
 	margin-right: 12px;
 }
+
 div#content p	{
 	font-size: 0.75em;
 	line-height: 1.6;
@@ -106,26 +96,30 @@ div#content p	{
 	margin-left: 12px;
 	margin-right: 12px;
 }
+
 /* フッター */
-.footer	{
+div#footer	{
 	color: #ffffff;
 	background-color: #005087;
 	margin-top: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
-.copyright	{
+
+address	{
 	font-size: 0.75em;
 	font-style: normal;
 	text-align: center;
-	display: block;
 }
+
+
 /* 画像の配置 */
 img.photo-odd	{
 	float: right;
 	margin-left: 15px;
 	margin-bottom: 15px;
 }
+
 img.photo-even	{
 	float: left;
 	margin-right: 15px;
