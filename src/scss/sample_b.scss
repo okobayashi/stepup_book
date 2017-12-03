@@ -8,36 +8,36 @@ div#container	{
 	margin-right: auto;
 }
 /* ヘッダー */
-div#header	{
+header	{
 	background-color: #017acd;
-	background-image: url(sky.jpg);
+	background-image: url(../images/sky.jpg);
 	padding: 28px 20px 150px;
 }
-div#header h1	{
+header h1	{
 	margin: 0;
 }
-div#header p	{
+header p	{
 	color: #ffffff;
 	font-size: 0.75em;
 	margin: 0;
 }
 /* パンくずリスト */
-p#bread	{
+nav#bread	{
 	font-size: 0.75em;
 	margin-top: 3px;
 	margin-bottom: 30px;
 }
 /* コンテンツ */
-div#content	{
+article	{
 	width: 564px;
 	float: right;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 25px;
 }
-div#content h2	{
+article h2	{
 	background-color: #014471;
-	background-image: url(bar-blue.png);
+	background-image: url(../images/bar-blue.png);
 	background-repeat: no-repeat;
 	font-size: 0.875em;
 	color: #ffffff;
@@ -46,9 +46,9 @@ div#content h2	{
 	margin-top: 0;
 	margin-bottom: 0;
 }
-div#content h3	{
+article h3	{
 	background-color: #e0e0e0;
-	background-image: url(bar-green.png);
+	background-image: url(../images/bar-green.png);
 	background-repeat: no-repeat;
 	font-size: 0.875em;
 	line-height: 23px;
@@ -56,7 +56,7 @@ div#content h3	{
 	margin-top: 30px;
 	margin-bottom: 0;
 }
-div#content p	{
+article p	{
 	font-size: 0.75em;
 	line-height: 1.6;
 	margin-top: 10px;
@@ -67,17 +67,17 @@ div#sidebar	{
 	float: left;
 	margin-bottom: 25px;
 }
-ul.sidemenu	{
+div#sidebar nav ul	{
 	font-size: 0.75em;
 	margin-top: 0;
 	margin-left: 0;
 	padding-left: 0;
 	line-height: 0;
 }
-ul.sidemenu li	{
+div#sidebar nav ul li	{
 	list-style-type: none;
 }
-ul.sidemenu li a	{
+div#sidebar nav ul li a	{
 	display: block;
 	line-height: 30px;
 	text-decoration: none;
@@ -86,13 +86,13 @@ ul.sidemenu li a	{
 	border-bottom: solid 1px #ffffff;
 	padding-left: 10px;
 }
-ul.sidemenu li a:hover	{
+div#sidebar nav ul li a:hover	{
 	background-color: #017acd;
 }
-p.feed	{
+div#sidebar aside {
 	margin-bottom: 10px;
 }
-p.feed a	{
+div#sidebar aside a	{
 	font-size: 0.75em;
 	color: #444444;
 	text-decoration: none;
@@ -100,13 +100,13 @@ p.feed a	{
 	border: solid 1px #888888;
 	padding: 5px;
 }
-p.feed img	{
+div#sidebar aside img	{
 	border: none;
 	vertical-align: middle;
 }
 /* フッター */
-div#footer	{
-	background-image: url(line-blue.png);
+footer	{
+	background-image: url(../images/line-blue.png);
 	background-repeat: repeat-x;
 	width: 760px;
 	margin-top: 0;
