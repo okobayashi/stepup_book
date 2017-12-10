@@ -10,24 +10,24 @@ div#container	{
 }
 
 /* ヘッダー */
-div#header	{
+header	{
 	background-color: #017acd;
-	background-image: url(sky.jpg);
+	background-image: url(../images/sky.jpg);
 	padding: 28px 20px 98px;
 }
 
-div#header h1	{
+header h1	{
 	margin: 0;
 }
 
-div#header p	{
+header p	{
 	color: #ffffff;
 	font-size: 0.75em;
 	margin: 0;
 }
 
 /* メニュー */
-ul#menu	{
+nav ul {
 	font-size: 0.75em;
 	margin-top: 0;
 	margin-bottom: 30px;
@@ -37,12 +37,12 @@ ul#menu	{
 	background-color: #005087;
 }
 
-ul#menu li	{
+nav li	{
 	list-style-type: none;
 	float: left;
 }
 
-ul#menu li a	{
+nav li a	{
 	display: block;
 	width: 120px;
 	line-height: 30px;
@@ -53,20 +53,20 @@ ul#menu li a	{
 	border-right: solid 1px #ffffff;
 }
 
-ul#menu li a:hover	{
+nav li a:hover	{
 	background-color: #017acd;
 }
 
 /* コンテンツ */
-div#content	{
+article	{
 	width: 564px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-div#content h2	{
+article > h1	{
 	background-color: #014471;
-	background-image: url(bar-darkblue.png);
+	background-image: url(../images/bar-darkblue.png);
 	background-repeat: no-repeat;
 	font-size: 1em;
 	color: #ffffff;
@@ -75,9 +75,9 @@ div#content h2	{
 	margin-bottom: 0;
 }
 
-div#content h3	{
+article > section > h1	{
 	background-color: #ffffff;
-	background-image: url(maru-skyblue.png);
+	background-image: url(../images/maru-skyblue.png);
 	background-repeat: no-repeat;
 	background-position: 0px 2px;
 	font-size: 0.875em;
@@ -98,7 +98,7 @@ div#content p	{
 }
 
 /* フッター */
-div#footer	{
+footer	{
 	color: #ffffff;
 	background-color: #005087;
 	margin-top: 25px;
@@ -106,7 +106,7 @@ div#footer	{
 	padding-bottom: 8px;
 }
 
-address	{
+small	{
 	font-size: 0.75em;
 	font-style: normal;
 	text-align: center;
