@@ -10,17 +10,17 @@ div#container	{
 }
 
 /* ヘッダー */
-header	{
+header#pageheader	{
 	background-color: #017acd;
 	background-image: url(../images/sky.jpg);
 	padding: 28px 20px 98px;
 }
 
-header h1	{
-	margin: 0;
+header#postheader h1	{
+	margin: 0 0 0 20px;
 }
 
-header p	{
+header#postheader h2	{
 	color: #ffffff;
 	font-size: 0.75em;
 	margin: 0;
@@ -64,7 +64,7 @@ article	{
 	margin-right: auto;
 }
 
-article > h1	{
+article header h1	{
 	background-color: #014471;
 	background-image: url(../images/bar-darkblue.png);
 	background-repeat: no-repeat;
