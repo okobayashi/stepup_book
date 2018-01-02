@@ -1,42 +1,70 @@
+body {
+	font-family: ' メイリオ ','Hiragino Kaku Gothic Pro','sans-serif';
+	background-color: #e5e5e5;
+	margin: 0;
+}
+
 a	{
-	
 	color: #017acd;
 }
 
 /* コンテナ */
 div#container	{
-	width: 760px;
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #ffffff;
+	padding: 0 40px;
+	-webkit-box-shadow: 0 0 50px #bbbbbb;
+	box-shadow: 0 0 50px #bbbbbb;
+	background-image: url(../images/circle.png), url(../images/circle-yellow.png);
+	background-repeat: no-repeat;
+	background-position: 15px 410px, 90px 490px;
+	background-size: 94px 94px, 30px 30px;
+	position: relative;
+	overflow: hidden;
 }
 
 /* ヘッダー */
-header {
-	background-color: #017acd;
-	background-image: url(../images/sky.jpg);
-	padding-top: 28px;
+header#pageheader {
+	background: none;
+	padding-top: 15px;
 }
 
-header h1	{
-	margin-left: 20px;
+header#pageheader h1	{
+	margin: 0;
+	float: left;
+	font-size: 40px;
+	font-weight: normal;
+	font-family: 'Varela Round', sans-serif;
 }
 
-header h2	{
-	color: #ffffff;
+header#pageheader h2	{
+	color: #666666;
 	font-size: 0.75em;
-	margin-bottom: 98px;
-	margin-left: 20px;
+	margin: 0;
+	padding-top: 20px;
+	text-align: right;
+	font-weight: normal;
 }
 
-/* メニュー */
+nav {
+	clear: both;
+}
+
 nav ul	{
 	font-size: 0.75em;
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	margin-left: 0;
 	padding-left: 0;
 	height: 30px;
-	background-color: #005087;
+	background-color: #333333;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(#777777 0%, #444444 50%, #333333 51%, #555555 100%);
+	background: -moz-linear-gradient(#777777 0%, #444444 50%, #333333 51%, #555555 100%);
+	background: -o-linear-gradient(#777777 0%, #444444 50%, #333333 51%, #555555 100%);
+	background: -ms-linear-gradient(#777777 0%, #444444 50%, #333333 51%, #555555 100%);
 }
 
 nav ul li	{
@@ -51,80 +79,144 @@ nav ul li a	{
 	text-decoration: none;
 	text-align: center;
 	color: #ffffff;
-	background-color: #005087;
-	border-right: solid 1px #ffffff;
+	border-right: solid 1px rgba(255,255,255,.2);
 }
 
 nav ul li a:hover	{
-	background-color: #017acd;
+	background-color: rgba(1,122,205,.3);
+}
+nav ul li:first-of-type a:hover {
+	border-radius: 5px 0 0 5px;
 }
 
 /* コンテンツ */
 article	{
-	width: 564px;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-article > h1	{
-	background-color: #014471;
-	background-image: url(../images/bar-darkblue.png);
-	background-repeat: no-repeat;
-	font-size: 1em;
-	color: #ffffff;
+article header {
+	border: solid 1px #aaaaaa;
+	border-radius: 5px;
+	margin: 20px 0 10px;
+	padding: 18px;
+	-webkit-box-shadow: 0 2px 3px #cccccc, 0 0 4px 3px #ffffff insets;
+	box-shadow: 0 2px 3px #cccccc, 0 0 4px 3px #ffffff inset;
+	background-color: rgba(255,255,255,.5);
+}
+
+article section {
+	clear: both;
+	border: solid 1px #aaaaaa;
+	border-radius: 5px;
+	margin: 20px 0 10px;
+	padding: 18px;
+	overflow: hidden;
+	background: -webkit-linear-gradient(#ffffff 0%, #dfdfdf 100%);
+	background: -moz-linear-gradient(#ffffff 0%, #dfdfdf 100%);
+	background: -o-linear-gradient(#ffffff 0%, #dfdfdf 100%);
+	background: -ms-linear-gradient(#ffffff 0%, #dfdfdf 100%);
+	-webkit-box-shadow: 0 2px 3px #cccccc;
+	box-shadow: 0 2px 3px #cccccc, 0 0 4px 3px #ffffff inset ;
+}
+
+article header h1	{
+	background: none;
+	font-size: 28px;
+	color: #000000;
 	line-height: 45px;
-	padding-left: 12px;
-	margin-bottom: 0;
+	padding-left: 0;
+	margin: 0;
+	font-weight: normal;
+	float: left;
+}
+
+article header p {
+	font-size: 16px;
+	color: #444444;
+	margin-left: 300px;
 }
 
 article section h1	{
-	background-color: #ffffff;
-	background-image: url(../images/maru-skyblue.png);
-	background-repeat: no-repeat;
-	background-position: 0px 2px;
-	font-size: 0.875em;
+	background: none;
+	font-size: 24px;
+	font-weight: normal;
 	line-height: 22px;
-	padding-left: 26px;
-	margin-top: 30px;
-	margin-bottom: 0;
-	margin-left: 12px;
-	margin-right: 12px;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 article p	{
 	font-size: 0.75em;
 	line-height: 1.6;
 	margin-top: 10px;
-	margin-left: 12px;
-	margin-right: 12px;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 /* フッター */
 footer	{
-	color: #ffffff;
-	background-color: #005087;
+	color: #888888;
 	margin-top: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	clear: both;
+	border-top: solid 1px #aaaaaa;
 }
 
 small	{
 	display: block;
 	font-size: 0.75em;
 	font-style: normal;
-	text-align: center;
+	text-align: left;
+	&::before {
+		content: 'Green Leaf';
+		display: block;
+		width: 200px;
+		padding: 10px 0;
+		background-color: #880000;
+		color: #ffffff;
+		font-family: 'Varela Round', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		-webkit-transform: rotate(-45deg) translate(62px, 20px);
+		-moz-transform: rotate(-45deg) translate(62px, 20px);
+		-o-transform: rotate(-45deg) translate(62px, 20px);
+		-ms-transform: rotate(-45deg) translate(62px, 20px);
+	}
 }
 
 
 /* 画像の配置 */
-img.photo-odd	{
-	float: right;
-	margin-left: 15px;
-	margin-bottom: 15px;
+figure {
+	margin: 0;
 }
 
-img.photo-even	{
+article section:nth-of-type(odd) figure {
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 0;
+}
+
+article section:nth-of-type(even) figure	{
 	float: left;
 	margin-right: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 0;
+}
+
+article section figcaption {
+	color: #666666;
+	font-size: 10px;
+	display: block;
+}
+
+article section:nth-of-type(odd) figcaption {
+	text-align: right;
 }
