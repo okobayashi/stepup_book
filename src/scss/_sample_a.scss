@@ -96,6 +96,12 @@ article	{
 	margin-right: auto;
 }
 
+article div[itemprop="articleBody"] {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+}
+
 article header {
 	border: solid 1px #aaaaaa;
 	border-radius: 5px;
@@ -119,6 +125,12 @@ article section {
 	background: -ms-linear-gradient(#ffffff 0%, #dfdfdf 100%);
 	-webkit-box-shadow: 0 2px 3px #cccccc;
 	box-shadow: 0 2px 3px #cccccc, 0 0 4px 3px #ffffff inset ;
+	width: 288px;
+	margin-right: 18px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: visible;
 }
 
 article header h1	{
@@ -148,6 +160,8 @@ article section h1	{
 	margin-bottom: 20px;
 	margin-left: 0;
 	margin-right: 0;
+	height: 48px;
+	line-height: 1.2;
 }
 
 article p	{
@@ -193,7 +207,6 @@ small	{
 	}
 }
 
-
 /* 画像の配置 */
 figure {
 	margin: 0;
@@ -219,4 +232,25 @@ article section figcaption {
 
 article section:nth-of-type(odd) figcaption {
 	text-align: right;
+}
+
+article section:nth-of-type(1n) figure {
+		float: none;
+		margin: 0;
+}
+
+article section:nth-of-type(1n) figcaption {
+		text-align: center;
+		margin-bottom: 15px;
+}
+
+/* ③段組み　IE~9とopera用 */
+article section {
+	clear: both;
+	float: left;
+	position: relative;
+}
+
+article section + section + section {
+	margin-right: 0;
 }
