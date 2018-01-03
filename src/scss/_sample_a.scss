@@ -264,6 +264,12 @@ label span {
 	color: #ff0000;
 }
 
+/* ビデオ設定(sample_d.htmlのみ。それ以外の時は消す) */
+article {
+	text-align: center;
+	margin: 30px 0 100px;
+}
+
 /* ======PC用の設定====== */
 @media only screen and (min-width: 900px){
 
@@ -324,6 +330,10 @@ nav ul {
 
 nav ul li a {
 	width: 100px;
+}
+video {
+	width: 480px;
+	height: 270px;
 }
 }
 
@@ -388,5 +398,10 @@ article section:nth-of-type(1n) figure {
 article section:nth-of-type(1n) figcaption {
 		text-align: center;
 		margin-bottom: 15px;
+}
+
+video {
+	width: 280px;
+	height: 157px;
 }
 }
