@@ -222,6 +222,47 @@ article section:nth-of-type(odd) figcaption {
 	text-align: right;
 }
 
+form {
+	max-width: 500px;
+	margin: 30px auto;
+}
+
+input, textarea {
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: solid 1px #aaaaaa;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+textarea {
+	height: 110px;
+}
+
+input[type="submit"] {
+	width: 200px;
+	background-color: #cef178;
+}
+
+input:required, input:invalid {
+	background-image: url(../images/caution.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+input:valid {
+	background-image: none;
+}
+
+input:focus {
+	outline: solid 3px rgba(159,256,16,.5);
+}
+
+label span {
+	color: #ff0000;
+}
 
 /* ======PC用の設定====== */
 @media only screen and (min-width: 900px){
