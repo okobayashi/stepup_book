@@ -96,18 +96,12 @@ article	{
 	margin-right: auto;
 }
 
-article div[itemprop="articleBody"] {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-box;
-}
-
 article header {
 	border: solid 1px #aaaaaa;
 	border-radius: 5px;
 	margin: 20px 0 10px;
 	padding: 18px;
-	-webkit-box-shadow: 0 2px 3px #cccccc, 0 0 4px 3px #ffffff insets;
+	-webkit-box-shadow: 0 2px 3px #cccccc, 0 0 4px 3px #ffffff inset;
 	box-shadow: 0 2px 3px #cccccc, 0 0 4px 3px #ffffff inset;
 	background-color: rgba(255,255,255,.5);
 }
@@ -124,13 +118,7 @@ article section {
 	background: -o-linear-gradient(#ffffff 0%, #dfdfdf 100%);
 	background: -ms-linear-gradient(#ffffff 0%, #dfdfdf 100%);
 	-webkit-box-shadow: 0 2px 3px #cccccc;
-	box-shadow: 0 2px 3px #cccccc, 0 0 4px 3px #ffffff inset ;
-	width: 288px;
-	margin-right: 18px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	overflow: visible;
+	box-shadow: 0 2px 3px #cccccc, 0 0 4px 3px #ffffff inset;
 }
 
 article header h1	{
@@ -184,7 +172,7 @@ footer	{
 
 small	{
 	display: block;
-	font-size: 0.75em;
+	font-size: 10px;
 	font-style: normal;
 	text-align: left;
 	&::before {
@@ -234,6 +222,33 @@ article section:nth-of-type(odd) figcaption {
 	text-align: right;
 }
 
+
+/* ======PC用の設定====== */
+@media only screen and (min-width: 900px){
+
+/* ③段組み　IE~9とopera用 */
+article div[itemprop="articleBody"] {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+}
+
+article section {
+	clear: both;
+	float: left;
+	position: relative;
+	width: 288px;
+	margin-right: 18px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: visible;
+}
+
+article section + section + section {
+	margin-right: 0;
+}
+
 article section:nth-of-type(1n) figure {
 		float: none;
 		margin: 0;
@@ -243,14 +258,94 @@ article section:nth-of-type(1n) figcaption {
 		text-align: center;
 		margin-bottom: 15px;
 }
-
-/* ③段組み　IE~9とopera用 */
-article section {
-	clear: both;
-	float: left;
-	position: relative;
 }
 
-article section + section + section {
-	margin-right: 0;
+/* =====タブレット用の設定===== */
+
+@media only screen and (min-width: 600px) and (max-width: 899px){
+div#container {
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0 10px;
+	background-position: -5px 400px, 70px 480px;
+}
+
+header#pageheader img {
+	width: 100%;
+	height: auto;
+}
+
+nav ul {
+	font-size: 10px;
+}
+
+nav ul li a {
+	width: 100px;
+}
+}
+
+/* =====スマートフォン用の設定===== */
+
+@media only screen and (max-width: 599px){
+
+div#container {
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0 10px;
+	background-position: -3px 220px, 75px 300px;
+}
+
+header#pageheader {
+	width: 100%;
+	height: auto;
+}
+
+nav ul {
+	font-size: 8px;
+}
+
+nav ul li a {
+	width: auto;
+	display: inline-block;
+	padding: 0 3px;
+}
+
+header#pageheader img {
+	width: 100%;
+	height: auto;
+}
+
+header#pageheader h1 {
+	font-size: 24px;
+	margin-right: 15px;
+}
+header#pageheader h2 {
+	font-size: 10px;
+	text-align: left;
+	padding: 0;
+}
+
+article header h1 {
+	float: none;
+}
+
+article header p {
+	margin: 0;
+}
+
+article section:nth-of-type(1n) figure {
+		float: none;
+		margin: 0;
+		text-align: center;
+		display: block;
+}
+
+article section:nth-of-type(1n) figcaption {
+		text-align: center;
+		margin-bottom: 15px;
+}
 }
